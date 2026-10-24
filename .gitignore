@@ -1,15 +1,24 @@
+# Datos geográficos regenerables
+*.gpkg
+datos/*.geojson
+
 # Python
 __pycache__/
 *.pyc
 .venv/
 venv/
 
+# Node.js
+node_modules/
+
+# Credenciales
+.env
+
 # Archivos temporales
 *.tmp
 *.log
 
-# Configuraciones locales
-.env
+# Configuración local
 .vscode/
 
 # Archivos del sistema

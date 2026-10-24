@@ -21,3 +21,14 @@ Desarrollar las actividades de nivelación y los talleres prácticos del curso, 
 ## Datos geográficos
 
 El repositorio incluye información geográfica de hospitales del departamento de Boyacá en formato GeoJSON.
+## Cómo se ejecuta
+
+El proyecto se desarrolla en Windows utilizando PowerShell, Git, Python, QGIS y Docker. Cada actividad se ejecuta siguiendo las instrucciones de nivelación y los talleres del curso.
+
+Los procedimientos específicos de ejecución se documentarán conforme avance el desarrollo.
+
+## Origen de los datos
+
+Los datos geográficos de Boyacá se obtienen mediante el script `scripts/descargar_boyaca.py`, suministrado en el repositorio original del docente, que consulta fuentes como IDE Boyacá y DANE.
+
+El archivo `hospitales_boyaca.geojson` se conserva en este repositorio como parte del Ejercicio A2.
