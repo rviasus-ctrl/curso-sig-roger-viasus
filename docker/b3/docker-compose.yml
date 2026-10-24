@@ -11,6 +11,21 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
 
+  geoserver:
+    image: docker.osgeo.org/geoserver:2.25.3
+    ports:
+      - "127.0.0.1:8080:8080"
+    depends_on:
+      - postgis
+
+  pg_tileserv:
+    image: pramsey/pg_tileserv:latest
+    environment:
+      DATABASE_URL: postgres://postgres:${POSTGRES_PASSWORD:?Defina POSTGRES_PASSWORD}@postgis:5432/geodatos
+    ports:
+      - "127.0.0.1:7800:7800"
+    depends_on:
+      - postgis
+
 volumes:
   pgdata:
-
